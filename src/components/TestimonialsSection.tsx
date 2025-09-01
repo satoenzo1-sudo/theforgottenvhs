@@ -79,6 +79,17 @@ const TestimonialsSection = () => {
           viewport={{ once: true }}
           className="max-w-4xl mx-auto mb-16"
         >
+          {/* Video Title */}
+          <motion.h3 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{ once: true }}
+            className="text-2xl md:text-3xl font-typewriter text-evidence-gold text-center mb-8"
+          >
+            Veja o depoimento abaixo, de uma de nossas detetives satisfeitas
+          </motion.h3>
+
           <div className="evidence-card p-8 rounded-lg relative">
             {/* VHS scanlines */}
             <div className="absolute inset-0 vhs-scanlines opacity-5 rounded-lg"></div>
@@ -95,7 +106,7 @@ const TestimonialsSection = () => {
             {/* Video embed */}
             <div className="aspect-[9/16] relative rounded-lg overflow-hidden max-w-sm mx-auto border-2 border-evidence-gold">
               <iframe 
-                src="https://fast.wistia.com/embed/iframe/ghow4703s2" 
+                src="https://www.youtube.com/embed/eLK5SSKBH34" 
                 title="Depoimento da Fernanda" 
                 frameBorder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
