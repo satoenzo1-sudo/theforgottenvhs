@@ -58,7 +58,7 @@ const HeroSection = () => {
         ease: "easeOut",
         delay: 0.2
       }} className="mb-8">
-          <h1 className="text-5xl md:text-7xl font-typewriter font-bold text-aged-paper mb-4 block text-vhs-red">Você conseguiria resolver o caso criminal mais realista e obscuro do TikTok?</h1>
+          <h1 className="text-5xl md:text-7xl font-typewriter font-bold text-aged-paper mb-4 block text-vhs-red">Você teria coragem de abrir um arquivo proibido, esquecido há mais de 40 anos no interior dos EUA?</h1>
           
           <motion.div initial={{
           opacity: 0,
@@ -84,7 +84,7 @@ const HeroSection = () => {
       }} transition={{
         delay: 1,
         duration: 0.8
-      }} className="text-xl md:text-2xl font-serif-italic text-aged-paper max-w-4xl mx-auto mb-8 leading-relaxed">Descubra os segredos escondidos na fita VHS 13 e viva a experiência de um verdadeiro detetive solucionando um caso .</motion.p>
+      }} className="text-xl md:text-2xl font-serif-italic text-aged-paper max-w-4xl mx-auto mb-8 leading-relaxed">Entre páginas amareladas, laudos borrados e fotografias que nunca deveriam ter sido reveladas, repousa um mistério que o tempo tentou enterrar.</motion.p>
 
         {/* Urgency trigger after headline */}
         <motion.div initial={{

@@ -71,6 +71,41 @@ const TestimonialsSection = () => {
           </motion.div>
         </motion.div>
 
+        {/* Video Testimonial */}
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          viewport={{ once: true }}
+          className="max-w-4xl mx-auto mb-16"
+        >
+          <div className="evidence-card p-8 rounded-lg relative">
+            {/* VHS scanlines */}
+            <div className="absolute inset-0 vhs-scanlines opacity-5 rounded-lg"></div>
+            
+            {/* Confidential watermark */}
+            <motion.div 
+              className="absolute top-4 right-4 stamp text-xs opacity-30" 
+              animate={{ rotate: [12, 15, 10, 12], scale: [0.8, 1, 0.9, 0.8] }}
+              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+            >
+              CONFIDENCIAL
+            </motion.div>
+
+            {/* Video embed */}
+            <div className="aspect-[9/16] relative rounded-lg overflow-hidden max-w-sm mx-auto border-2 border-evidence-gold">
+              <iframe 
+                src="https://www.youtube.com/embed/eLK5SSKBH34" 
+                title="Depoimento da Fernanda" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen 
+                className="w-full h-full"
+              />
+            </div>
+          </div>
+        </motion.div>
+
         {/* Slideshow de Depoimentos */}
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
