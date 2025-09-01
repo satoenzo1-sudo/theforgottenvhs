@@ -58,9 +58,7 @@ const HeroSection = () => {
         ease: "easeOut",
         delay: 0.2
       }} className="mb-8">
-          <h1 className="text-5xl md:text-7xl font-typewriter font-bold text-aged-paper mb-4 block text-vhs-red">
-            Você conseguiria resolver o caso criminal mais realista e imersivo do TikTok?
-          </h1>
+          <h1 className="text-5xl md:text-7xl font-typewriter font-bold text-aged-paper mb-4 block text-vhs-red">Você conseguiria resolver o caso criminal mais realista e obscuro do TikTok?</h1>
           
           <motion.div initial={{
           opacity: 0,
@@ -86,9 +84,7 @@ const HeroSection = () => {
       }} transition={{
         delay: 1,
         duration: 0.8
-      }} className="text-xl md:text-2xl font-serif-italic text-aged-paper max-w-4xl mx-auto mb-8 leading-relaxed">
-          Descubra os segredos escondidos na fita VHS 13 e viva a experiência de um verdadeiro detetive.
-        </motion.p>
+      }} className="text-xl md:text-2xl font-serif-italic text-aged-paper max-w-4xl mx-auto mb-8 leading-relaxed">Descubra os segredos escondidos na fita VHS 13 e viva a experiência de um verdadeiro detetive solucionando um caso .</motion.p>
 
         {/* Urgency trigger after headline */}
         <motion.div initial={{
@@ -127,9 +123,7 @@ const HeroSection = () => {
         delay: 1.2,
         duration: 0.8
       }} className="case-file rounded-lg p-8 max-w-2xl mx-auto mb-12">
-          <h3 className="text-2xl font-typewriter text-evidence-gold mb-6">
-            O jogo viral no TikTok para quem ama mistério antigo.
-          </h3>
+          <h3 className="text-2xl font-typewriter text-evidence-gold mb-6">O jogo viral no TikTok para quem ama terror rural e mistério antigo.</h3>
           
           <div className="grid md:grid-cols-3 gap-6 text-center">
             <motion.div whileHover={{
