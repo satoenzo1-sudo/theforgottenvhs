@@ -105,22 +105,13 @@ const TestimonialsSection = () => {
 
             {/* Video embed */}
             <div className="aspect-[9/16] relative rounded-lg overflow-hidden max-w-sm mx-auto border-2 border-evidence-gold">
-              <div 
-                dangerouslySetInnerHTML={{
-                  __html: `
-                    <script src="https://fast.wistia.com/player.js" async></script>
-                    <script src="https://fast.wistia.com/embed/78dmiz6cwa.js" async type="module"></script>
-                    <style>
-                      wistia-player[media-id='78dmiz6cwa']:not(:defined) { 
-                        background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/78dmiz6cwa/swatch'); 
-                        display: block; 
-                        filter: blur(5px); 
-                        padding-top: 177.78%; 
-                      }
-                    </style>
-                    <wistia-player media-id="78dmiz6cwa" aspect="0.5625" style="width: 100%; height: 100%;"></wistia-player>
-                  `
-                }}
+              <iframe 
+                src="https://fast.wistia.com/embed/iframe/78dmiz6cwa" 
+                title="Depoimento da Fernanda" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen 
+                className="w-full h-full"
               />
             </div>
           </div>
