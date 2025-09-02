@@ -106,7 +106,7 @@ const TestimonialsSection = () => {
             {/* Video embed */}
             <div className="aspect-[9/16] relative rounded-lg overflow-hidden max-w-sm mx-auto border-2 border-evidence-gold">
               <iframe 
-                src="https://www.youtube.com/embed/eLK5SSKBH34" 
+                src="https://fast.wistia.com/embed/iframe/ghow4703s2" 
                 title="Depoimento da Fernanda" 
                 frameBorder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
