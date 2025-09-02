@@ -71,7 +71,7 @@ const TestimonialsSection = () => {
           </motion.div>
         </motion.div>
 
-        {/* Video Testimonial */}
+        {/* Second Video Testimonial */}
         <motion.div 
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -87,7 +87,7 @@ const TestimonialsSection = () => {
             viewport={{ once: true }}
             className="text-2xl md:text-3xl font-typewriter text-evidence-gold text-center mb-8"
           >
-            Veja o depoimento abaixo, de uma de nossas detetives satisfeitas
+            Ouça o depoimento abaixo do namorado da Ana
           </motion.h3>
 
           <div className="evidence-card p-8 rounded-lg relative">
@@ -103,11 +103,11 @@ const TestimonialsSection = () => {
               CONFIDENCIAL
             </motion.div>
 
-            {/* Video embed */}
-            <div className="aspect-[9/16] relative rounded-lg overflow-hidden max-w-sm mx-auto border-2 border-evidence-gold">
+            {/* Video embed with 1:1 aspect ratio */}
+            <div className="aspect-square relative rounded-lg overflow-hidden max-w-sm mx-auto border-2 border-evidence-gold">
               <iframe 
-                src="https://fast.wistia.com/embed/iframe/78dmiz6cwa" 
-                title="Depoimento da Fernanda" 
+                src="https://fast.wistia.com/embed/iframe/85spie5y3y" 
+                title="Depoimento do namorado da Ana" 
                 frameBorder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowFullScreen 
