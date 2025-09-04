@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { FileText, Microscope, MessageSquare, MapPin, Camera, Smartphone } from 'lucide-react';
+import ProductShowcase from './ProductShowcase';
 
 const IncludedSection = () => {
   const items = [
@@ -137,6 +138,20 @@ const IncludedSection = () => {
               </p>
             </motion.div>
           </div>
+        </motion.div>
+
+        {/* Product Showcase */}
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.0 }}
+          viewport={{ once: true }}
+          className="mt-16"
+        >
+          <h3 className="text-3xl md:text-4xl font-typewriter text-evidence-gold text-center mb-8">
+            Veja por dentro do caso Red Ridge:
+          </h3>
+          <ProductShowcase />
         </motion.div>
 
       </div>
