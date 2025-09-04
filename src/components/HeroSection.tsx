@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FileX, Zap, Download } from 'lucide-react';
+import { FileX, Zap, Gamepad2 } from 'lucide-react';
 const HeroSection = () => {
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden vhs-noise pt-20">
       {/* Background VHS Static Effect */}
@@ -111,7 +111,7 @@ const HeroSection = () => {
             <motion.div whileHover={{
             scale: 1.05
           }} className="flex flex-col items-center">
-              <Download className="w-6 h-6 text-vhs-red mb-2" />
+              <Gamepad2 className="w-6 h-6 text-vhs-red mb-2" />
               <p className="font-mono text-aged-paper text-sm">1 a 2 horas de jogabilidade</p>
             </motion.div>
             
