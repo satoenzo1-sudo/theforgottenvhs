@@ -4,11 +4,11 @@ const HowItWorksSection = () => {
   const steps = [{
     icon: Download,
     title: "Receba os arquivos secretos no seu e-mail.",
-    description: "Baixe ou imprima o PDF completo com os documentos do caso",
+    description: "Download instantâneo após a compra",
     delay: 0.2
   }, {
     icon: Search,
-    title: "Explore relatórios, laudos e documentos antigos, etc.",
+    title: "Explore relatórios, laudos e documentos antigos.",
     description: "Analise cada evidência com cuidado",
     delay: 0.4
   }, {
@@ -56,7 +56,7 @@ const HowItWorksSection = () => {
         }} viewport={{
           once: true
         }} className="inline-block bg-evidence-gold/10 border border-evidence-gold px-6 py-3 rounded-lg mb-4">
-            <p className="font-mono text-evidence-gold text-lg font-bold">⏰ Entrega em menos de 1 minutos</p>
+            <p className="font-mono text-evidence-gold text-lg font-bold">Entrega Instantânea</p>
           </motion.div>
           <div className="w-32 h-1 bg-vhs-red mx-auto"></div>
         </motion.div>
