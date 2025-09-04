@@ -8,7 +8,7 @@ const HowItWorksSection = () => {
     delay: 0.2
   }, {
     icon: Search,
-    title: "Explore relatórios, laudos e documentos antigos.",
+    title: "Explore relatórios, laudos e documentos antigos, etc.",
     description: "Analise cada evidência com cuidado",
     delay: 0.4
   }, {
