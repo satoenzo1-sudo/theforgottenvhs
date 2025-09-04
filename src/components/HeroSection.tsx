@@ -86,31 +86,6 @@ const HeroSection = () => {
         duration: 0.8
       }} className="text-xl md:text-2xl font-serif-italic text-aged-paper max-w-4xl mx-auto mb-8 leading-relaxed">Entre páginas amareladas, laudos borrados e fotografias que nunca deveriam ter sido reveladas, repousa um mistério que o tempo tentou enterrar.</motion.p>
 
-        {/* Urgency trigger after headline */}
-        <motion.div initial={{
-        opacity: 0,
-        scale: 0.9
-      }} animate={{
-        opacity: 1,
-        scale: 1
-      }} transition={{
-        delay: 1.2,
-        duration: 0.6
-      }} className="mb-12">
-          <motion.div className="inline-block border border-vhs-red bg-vhs-red/10 px-6 py-3 rounded-lg" animate={{
-          borderColor: ['hsl(var(--vhs-red))', 'hsl(var(--evidence-gold))', 'hsl(var(--vhs-red))']
-        }} transition={{
-          duration: 3,
-          repeat: Infinity
-        }}>
-            <p className="font-mono text-vhs-red font-bold text-lg">
-              ⚠️ ACESSO LIBERADO POR TEMPO LIMITADO
-            </p>
-            <p className="font-mono text-aged-paper text-sm mt-1">
-              Promoção válida apenas nas próximas 24 horas
-            </p>
-          </motion.div>
-        </motion.div>
 
         {/* Quick Highlight Section */}
         <motion.div initial={{
@@ -149,37 +124,6 @@ const HeroSection = () => {
           </div>
         </motion.div>
 
-        {/* CTA Button */}
-        <motion.button initial={{
-        opacity: 0,
-        scale: 0.8
-      }} animate={{
-        opacity: 1,
-        scale: 1
-      }} transition={{
-        delay: 1.5,
-        duration: 0.8
-      }} whileHover={{
-        scale: 1.05,
-        boxShadow: "0 0 30px hsl(var(--vhs-red) / 0.6), 0 0 60px hsl(var(--vhs-red) / 0.3)",
-        textShadow: "0 0 10px hsl(var(--vhs-red) / 0.8)"
-      }} whileTap={{
-        scale: 0.95
-      }} className="btn-investigation px-12 py-4 text-xl font-bold rounded-lg relative overflow-hidden" onClick={() => {
-        const pricingSection = document.getElementById('pricing');
-        if (pricingSection) {
-          pricingSection.scrollIntoView({
-            behavior: 'smooth'
-          });
-        }
-      }}>
-          <motion.div className="absolute inset-0 vhs-scanlines opacity-0" whileHover={{
-          opacity: 0.3
-        }} transition={{
-          duration: 0.3
-        }} />
-          <span className="relative z-10">👉 Entrar no Caso Agora</span>
-        </motion.button>
       </div>
 
       {/* Scroll Indicator */}

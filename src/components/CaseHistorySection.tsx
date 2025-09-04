@@ -64,17 +64,25 @@ const CaseHistorySection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true }}
-              className="text-lg md:text-xl font-mono text-aged-paper leading-relaxed"
+              className="text-lg md:text-xl font-mono text-aged-paper leading-relaxed mb-6"
             >
-              Há mais de 40 anos, um caso não resolvido foi trancado em arquivos confidenciais e esquecido pelo tempo.
-              Agora, você pode acessar esses documentos secretos e tentar resolver aquilo que nem os investigadores originais conseguiram.
+              Entre 1982 e 1985, o condado de Red Ridge, Tennessee, viveu uma sequência de crimes que nunca recebeu explicações oficiais. Em apenas três anos, sete mulheres foram encontradas mortas, todas em circunstâncias semelhantes, deixando registros fragmentados e inconsistentes.
             </motion.p>
 
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              viewport={{ once: true }}
+              className="text-lg md:text-xl font-mono text-aged-paper leading-relaxed mb-6"
+            >
+              Em 1984, um suspeito foi preso — mas sua morte misteriosa, meses depois, levantou ainda mais dúvidas. Quando uma nova vítima surgiu após o falecimento dele, o caso foi arquivado às pressas, enterrado junto com as respostas que nunca vieram.
+            </motion.p>
 
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
               viewport={{ once: true }}
               className="my-8 h-px bg-gradient-to-r from-transparent via-evidence-gold to-transparent"
             />
@@ -82,12 +90,21 @@ const CaseHistorySection = () => {
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
+              transition={{ duration: 0.8, delay: 1.0 }}
               viewport={{ once: true }}
               className="text-lg md:text-xl font-mono text-aged-paper leading-relaxed mb-6"
             >
-              Dentro deste arquivo secreto existe um mistério que ficou escondido por décadas.
-              Relatos policiais, laudos forenses, autópsias, documentos confidenciais e muito mais revelam um enigma que você precisa desvendar.
+              Entre os documentos recolhidos, uma fita ganhou destaque: VHS 13. Seu conteúdo reúne depoimentos truncados, laudos incompletos e imagens que parecem ter sido deliberadamente cortadas. Até hoje, ninguém sabe se o que ela mostra é a verdade… ou apenas uma parte dela.
+            </motion.p>
+
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 1.2 }}
+              viewport={{ once: true }}
+              className="text-lg md:text-xl font-mono text-aged-paper leading-relaxed mb-6"
+            >
+              Por que esse caso foi abafado? Quem estava realmente por trás das mortes em Red Ridge? E, principalmente: o que o VHS 13 esconde?
             </motion.p>
 
             {/* Challenge/Competition trigger */}
