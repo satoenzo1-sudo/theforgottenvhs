@@ -4,7 +4,7 @@ const HowItWorksSection = () => {
   const steps = [{
     icon: Download,
     title: "Receba os arquivos secretos no seu e-mail.",
-    description: "Download instantâneo após a compra",
+    description: "Baixe ou imprima o PDF completo com os documentos do caso",
     delay: 0.2
   }, {
     icon: Search,
