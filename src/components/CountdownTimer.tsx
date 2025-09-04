@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 
 const CountdownTimer = () => {
   const [timeLeft, setTimeLeft] = useState({
-    hours: 1,
-    minutes: 0,
+    hours: 0,
+    minutes: 30,
     seconds: 0
   });
 
@@ -18,8 +18,8 @@ const CountdownTimer = () => {
         } else if (prevTime.hours > 0) {
           return { hours: prevTime.hours - 1, minutes: 59, seconds: 59 };
         } else {
-          // Reset to 1 hour when timer ends
-          return { hours: 1, minutes: 0, seconds: 0 };
+          // Reset to 30 minutes when timer ends
+          return { hours: 0, minutes: 30, seconds: 0 };
         }
       });
     }, 1000);

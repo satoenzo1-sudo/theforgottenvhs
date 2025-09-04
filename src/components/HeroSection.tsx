@@ -97,29 +97,29 @@ const HeroSection = () => {
       }} transition={{
         delay: 1.2,
         duration: 0.8
-      }} className="case-file rounded-lg p-8 max-w-2xl mx-auto mb-12">
-          <h3 className="text-2xl font-typewriter text-evidence-gold mb-6">O jogo viral no TikTok para quem ama terror rural e mistério antigo.</h3>
+      }} className="case-file rounded-lg p-6 max-w-xl mx-auto mb-12">
+          <h3 className="text-xl font-typewriter text-evidence-gold mb-4">O jogo viral no TikTok para quem ama terror rural e mistério antigo.</h3>
           
-          <div className="grid md:grid-cols-3 gap-6 text-center">
+          <div className="grid md:grid-cols-2 gap-4 text-center">
             <motion.div whileHover={{
             scale: 1.05
           }} className="flex flex-col items-center">
-              <Zap className="w-8 h-8 text-vhs-red mb-3" />
-              <p className="font-mono text-aged-paper">Dificuldade: Médio para Difícil</p>
+              <Zap className="w-6 h-6 text-vhs-red mb-2" />
+              <p className="font-mono text-aged-paper text-sm">Dificuldade: Médio para Difícil</p>
             </motion.div>
             
             <motion.div whileHover={{
             scale: 1.05
           }} className="flex flex-col items-center">
-              <Download className="w-8 h-8 text-vhs-red mb-3" />
-              <p className="font-mono text-aged-paper">Entrega digital instantânea</p>
+              <Download className="w-6 h-6 text-vhs-red mb-2" />
+              <p className="font-mono text-aged-paper text-sm">1 a 2 horas de jogabilidade</p>
             </motion.div>
             
             <motion.div whileHover={{
             scale: 1.05
-          }} className="flex flex-col items-center">
-              <FileX className="w-8 h-8 text-vhs-red mb-3" />
-              <p className="font-mono text-aged-paper">Mistério profundo sem spoilers</p>
+          }} className="flex flex-col items-center col-span-2">
+              <FileX className="w-6 h-6 text-vhs-red mb-2" />
+              <p className="font-mono text-aged-paper text-sm">Mistério profundo sem spoilers</p>
             </motion.div>
           </div>
         </motion.div>
