@@ -104,24 +104,16 @@ const TestimonialsSection = () => {
             </motion.div>
 
             {/* Video embed with 1:1 aspect ratio */}
-            <div 
-              className="aspect-square relative rounded-lg overflow-hidden max-w-sm mx-auto border-2 border-evidence-gold"
-              dangerouslySetInnerHTML={{
-                __html: `
-                  <script src="https://fast.wistia.com/player.js" async></script>
-                  <script src="https://fast.wistia.com/embed/tgl4m1rg8c.js" async type="module"></script>
-                  <style>
-                    wistia-player[media-id='tgl4m1rg8c']:not(:defined) {
-                      background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/tgl4m1rg8c/swatch');
-                      display: block;
-                      filter: blur(5px);
-                      padding-top:100.0%;
-                    }
-                  </style>
-                  <wistia-player media-id="tgl4m1rg8c" aspect="1.0"></wistia-player>
-                `
-              }}
-            />
+            <div className="aspect-square relative rounded-lg overflow-hidden max-w-sm mx-auto border-2 border-evidence-gold">
+              <iframe 
+                src="https://fast.wistia.com/embed/iframe/tgl4m1rg8c" 
+                title="Depoimento do namorado da Ana" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen 
+                className="w-full h-full"
+              />
+            </div>
           </div>
         </motion.div>
 
