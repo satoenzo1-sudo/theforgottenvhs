@@ -6,33 +6,39 @@ const IncludedSection = () => {
   const items = [
     {
       icon: FileText,
-      title: "📼 Arquivo secreto em estilo policial",
-      description: "• Páginas manchadas e relatos escondidos\n• Documentos confidenciais\n• Material de arquivo autêntico",
+      title: "📼 Arquivo policial",
+      description: "Documentos confidenciais manchados",
       delay: 0.1
     },
     {
       icon: Microscope,
-      title: "🩸 Laudos forenses digitalizados",
-      description: "• Relatórios médicos detalhados\n• Análises científicas\n• Evidências forenses",
+      title: "🩸 Laudos forenses",
+      description: "Relatórios médicos digitalizados",
       delay: 0.2
     },
     {
       icon: MessageSquare,
-      title: "🕵️‍♂️ Relatórios confidenciais dos detetives",
-      description: "• Anotações dos investigadores\n• Teorias e hipóteses\n• Depoimentos coletados",
+      title: "🕵️‍♂️ Relatórios dos detetives",
+      description: "Anotações dos investigadores",
       delay: 0.3
     },
     {
       icon: Camera,
-      title: "📷 Fotografias reveladas e documentos escaneados",
-      description: "• Fotos da cena do crime\n• Documentos originais dos anos 70\n• Material visual exclusivo",
+      title: "📷 Fotografias da cena",
+      description: "Fotos reveladoras dos anos 70",
       delay: 0.4
     },
     {
       icon: MapPin,
-      title: "🔍 Pistas e enigmas ocultos",
-      description: "• Quebra-cabeças interativos\n• Códigos para decifrar\n• Mistérios para desvendar",
+      title: "🔍 Pistas e enigmas",
+      description: "Códigos para decifrar",
       delay: 0.5
+    },
+    {
+      icon: Smartphone,
+      title: "🎵 Jogo viral TikTok",
+      description: "O jogo viral do tik tok no seu date",
+      delay: 0.6
     }
   ];
 
@@ -65,42 +71,42 @@ const IncludedSection = () => {
           </motion.div>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-6xl mx-auto">
           {items.map((item, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 50, rotateX: -15 }}
-              whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
-              transition={{ duration: 0.8, delay: item.delay }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: item.delay }}
               viewport={{ once: true }}
-              className="evidence-card p-6 rounded-lg relative group transform-gpu"
+              className="evidence-card p-4 rounded-lg relative group transform-gpu text-center hover:scale-105 transition-all duration-300"
             >
               {/* Background scanlines */}
               <div className="absolute inset-0 vhs-scanlines opacity-10 rounded-lg"></div>
               
               {/* Icon */}
               <motion.div 
-                className="mb-6"
-                whileHover={{ scale: 1.1, rotate: [0, -5, 5, 0] }}
-                transition={{ duration: 0.5 }}
+                className="mb-3"
+                whileHover={{ scale: 1.1 }}
+                transition={{ duration: 0.3 }}
               >
-                <item.icon className="w-10 h-10 text-evidence-gold" />
+                <item.icon className="w-6 h-6 text-evidence-gold mx-auto" />
               </motion.div>
 
               {/* Title */}
-              <h3 className="text-xl font-typewriter text-aged-paper mb-3 font-bold group-hover:text-evidence-gold transition-colors duration-300">
+              <h3 className="text-sm font-typewriter text-aged-paper mb-2 font-bold group-hover:text-evidence-gold transition-colors duration-300 leading-tight">
                 {item.title}
               </h3>
 
               {/* Description */}
-              <div className="font-mono text-muted-foreground text-sm leading-relaxed whitespace-pre-line">
+              <p className="font-mono text-muted-foreground text-xs leading-relaxed">
                 {item.description}
-              </div>
+              </p>
 
               {/* Corner tear effect */}
               <motion.div 
-                className="absolute top-0 right-0 w-0 h-0 border-l-[20px] border-l-transparent border-t-[20px] border-t-evidence-gold opacity-20"
-                whileHover={{ opacity: 40, scale: 1.2 }}
+                className="absolute top-0 right-0 w-0 h-0 border-l-[15px] border-l-transparent border-t-[15px] border-t-evidence-gold opacity-20"
+                whileHover={{ opacity: 40 }}
                 transition={{ duration: 0.3 }}
               />
             </motion.div>
