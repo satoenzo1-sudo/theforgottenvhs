@@ -7,31 +7,31 @@ const IncludedSection = () => {
     {
       icon: FileText,
       title: "📼 Arquivo secreto em estilo policial",
-      description: "com páginas manchadas e relatos escondidos.",
+      description: "• Páginas manchadas e relatos escondidos\n• Documentos confidenciais\n• Material de arquivo autêntico",
       delay: 0.1
     },
     {
       icon: Microscope,
       title: "🩸 Laudos forenses digitalizados",
-      description: "como se tivessem saído de uma investigação real.",
+      description: "• Relatórios médicos detalhados\n• Análises científicas\n• Evidências forenses",
       delay: 0.2
     },
     {
       icon: MessageSquare,
       title: "🕵️‍♂️ Relatórios confidenciais dos detetives",
-      description: "que falharam antes de você.",
+      description: "• Anotações dos investigadores\n• Teorias e hipóteses\n• Depoimentos coletados",
       delay: 0.3
     },
     {
       icon: Camera,
       title: "📷 Fotografias reveladas e documentos escaneados",
-      description: "direto dos anos 70.",
+      description: "• Fotos da cena do crime\n• Documentos originais dos anos 70\n• Material visual exclusivo",
       delay: 0.4
     },
     {
       icon: MapPin,
       title: "🔍 Pistas e enigmas ocultos",
-      description: "para você e seu parceiro(a) desvendar.",
+      description: "• Quebra-cabeças interativos\n• Códigos para decifrar\n• Mistérios para desvendar",
       delay: 0.5
     }
   ];
@@ -93,9 +93,9 @@ const IncludedSection = () => {
               </h3>
 
               {/* Description */}
-              <p className="font-mono text-muted-foreground text-sm leading-relaxed">
+              <div className="font-mono text-muted-foreground text-sm leading-relaxed whitespace-pre-line">
                 {item.description}
-              </p>
+              </div>
 
               {/* Corner tear effect */}
               <motion.div 

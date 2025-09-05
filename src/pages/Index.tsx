@@ -2,6 +2,7 @@ import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import CaseHistorySection from '@/components/CaseHistorySection';
 import VideoTestimonialSection from '@/components/VideoTestimonialSection';
+import CTASection from '@/components/CTASection';
 import HowItWorksSection from '@/components/HowItWorksSection';
 import TargetAudienceSection from '@/components/TargetAudienceSection';
 import IncludedSection from '@/components/IncludedSection';
@@ -19,6 +20,7 @@ const Index = () => {
       <HeroSection />
       <CaseHistorySection />
       <VideoTestimonialSection />
+      <CTASection />
       <HowItWorksSection />
       <TargetAudienceSection />
       <IncludedSection />
