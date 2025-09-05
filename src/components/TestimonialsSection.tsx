@@ -57,6 +57,23 @@ const TestimonialsSection = () => {
           <TestimonialSlideshow />
         </motion.div>
 
+        {/* CTA Button após primeiro depoimento */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-evidence-gold text-case-file-dark px-8 py-4 rounded-lg font-typewriter text-lg font-bold hover:bg-evidence-gold/90 transition-all duration-300 shadow-lg border-2 border-evidence-gold/50"
+          >
+            QUERO INVESTIGAR ESTE CASO AGORA
+          </motion.button>
+        </motion.div>
+
         {/* Depoimento em vídeo movido para o final */}
         <motion.div 
           initial={{ opacity: 0, scale: 0.9 }}
