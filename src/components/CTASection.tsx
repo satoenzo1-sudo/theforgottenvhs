@@ -53,6 +53,7 @@ const CTASection = () => {
             <Button 
               size="lg" 
               className="text-lg px-8 py-6 bg-evidence-gold hover:bg-evidence-gold/90 text-background font-typewriter tracking-wider transform hover:scale-105 transition-all duration-300"
+              onClick={() => window.open('https://pay.kiwify.com.br/0Ja4ags', '_blank')}
             >
               Comece a investigar agora!
             </Button>
