@@ -61,7 +61,7 @@ const HowItWorksSection = () => {
           <div className="w-32 h-1 bg-vhs-red mx-auto"></div>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
           {steps.map((step, index) => <motion.div key={index} initial={{
           opacity: 0,
           y: 50
@@ -73,9 +73,9 @@ const HowItWorksSection = () => {
           delay: step.delay
         }} viewport={{
           once: true
-        }} className="evidence-card p-6 rounded-lg text-center relative group">
+        }} className="evidence-card p-4 rounded-lg text-center relative group">
               {/* Step Number */}
-              <motion.div className="absolute -top-4 -right-4 w-8 h-8 bg-vhs-red text-aged-paper rounded-full flex items-center justify-center font-typewriter font-bold text-sm" whileHover={{
+              <motion.div className="absolute -top-3 -right-3 w-6 h-6 bg-vhs-red text-aged-paper rounded-full flex items-center justify-center font-typewriter font-bold text-xs" whileHover={{
             scale: 1.2,
             rotate: 360
           }} transition={{
@@ -85,22 +85,22 @@ const HowItWorksSection = () => {
               </motion.div>
 
               {/* Icon */}
-              <motion.div className="mb-6" whileHover={{
+              <motion.div className="mb-3" whileHover={{
             scale: 1.1,
             rotate: 5
           }} transition={{
             duration: 0.3
           }}>
-                <step.icon className="w-12 h-12 text-evidence-gold mx-auto" />
+                <step.icon className="w-8 h-8 text-evidence-gold mx-auto" />
               </motion.div>
 
               {/* Title */}
-              <h3 className="text-xl font-typewriter text-aged-paper mb-4 font-bold">
+              <h3 className="text-sm font-typewriter text-aged-paper mb-2 font-bold leading-tight">
                 {step.title}
               </h3>
 
               {/* Description */}
-              <p className="font-mono text-muted-foreground text-sm leading-relaxed">
+              <p className="font-mono text-muted-foreground text-xs leading-relaxed">
                 {step.description}
               </p>
 
