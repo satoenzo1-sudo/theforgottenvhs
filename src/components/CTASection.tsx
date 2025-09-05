@@ -31,10 +31,10 @@ const CTASection = () => {
             <div className="inline-block evidence-card p-4 rounded-lg">
               <div className="flex items-center justify-center gap-4">
                 <span className="text-2xl font-mono text-muted-foreground line-through">
-                  R$ 59,90
+                  R$ 57,00
                 </span>
                 <span className="text-4xl font-typewriter text-evidence-gold">
-                  R$ 29,90
+                  R$ 27,90
                 </span>
               </div>
               <p className="text-sm font-mono text-aged-paper mt-2">
