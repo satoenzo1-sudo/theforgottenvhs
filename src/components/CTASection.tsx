@@ -50,13 +50,23 @@ const CTASection = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <Button 
-              size="lg" 
-              className="text-lg px-8 py-6 bg-evidence-gold hover:bg-evidence-gold/90 text-background font-typewriter tracking-wider transform hover:scale-105 transition-all duration-300"
+            <motion.button
+              whileHover={{ 
+                scale: 1.08,
+                y: -3,
+                boxShadow: "0 20px 50px hsl(var(--evidence-gold) / 0.7), 0 0 80px hsl(var(--evidence-gold)), 0 0 120px hsl(var(--vhs-red) / 0.5)"
+              }}
+              whileTap={{ scale: 1.02 }}
+              className="btn-cta-primary text-xl px-12 py-6 font-typewriter tracking-wider rounded-lg relative overflow-hidden"
               onClick={() => window.open('https://pay.kiwify.com.br/0Ja4ags', '_blank')}
             >
-              Comece a investigar agora!
-            </Button>
+              <motion.div 
+                className="absolute inset-0 bg-gradient-to-r from-transparent via-aged-paper/10 to-transparent"
+                animate={{ x: ['-100%', '100%'] }}
+                transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+              />
+              <span className="relative z-10">🔥 COMECE A INVESTIGAR AGORA! 🔥</span>
+            </motion.button>
           </motion.div>
 
         </motion.div>

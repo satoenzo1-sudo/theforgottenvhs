@@ -109,21 +109,32 @@ const TargetAudienceSection = () => {
         }} viewport={{
           once: true
         }} className="text-center mt-12">
-            <motion.button whileHover={{
-            scale: 1.05,
-            boxShadow: "0 0 40px hsl(var(--vhs-red) / 0.8), 0 0 80px hsl(var(--vhs-red) / 0.4)"
-          }} whileTap={{
-            scale: 0.95
-          }} className="btn-investigation px-10 py-4 text-xl font-bold rounded-lg relative overflow-hidden" onClick={() => {
-            document.getElementById('pricing')?.scrollIntoView({
-              behavior: 'smooth'
-            });
-          }}>
-              <motion.span className="relative z-10" whileHover={{
-              y: -2
-            }} transition={{
-              duration: 0.2
-            }}>SIM, ACEITO O DESAFIO</motion.span>
+            <motion.button 
+              whileHover={{
+                scale: 1.08,
+                y: -3,
+                boxShadow: "0 15px 40px hsl(var(--vhs-red) / 0.6), 0 0 60px hsl(var(--evidence-gold) / 0.8), 0 0 100px hsl(var(--vhs-red) / 0.4)"
+              }} 
+              whileTap={{ scale: 1.02 }}
+              className="btn-investigation px-12 py-5 text-xl font-bold rounded-lg relative overflow-hidden" 
+              onClick={() => {
+                document.getElementById('pricing')?.scrollIntoView({
+                  behavior: 'smooth'
+                });
+              }}
+            >
+              <motion.div 
+                className="absolute inset-0 bg-gradient-to-r from-transparent via-evidence-gold/10 to-transparent"
+                animate={{ x: ['-100%', '100%'] }}
+                transition={{ duration: 2.5, repeat: Infinity, ease: "linear" }}
+              />
+              <motion.span 
+                className="relative z-10" 
+                whileHover={{ y: -2 }} 
+                transition={{ duration: 0.2 }}
+              >
+                ✅ SIM, ACEITO O DESAFIO!
+              </motion.span>
             </motion.button>
           </motion.div>
 

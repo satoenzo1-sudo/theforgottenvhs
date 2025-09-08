@@ -233,24 +233,105 @@ All colors MUST be HSL - VHS 80s Investigation Theme
     border-color: hsl(var(--evidence-gold) / 0.5);
   }
 
-  /* Investigation Button */
+  /* Investigation Button - Chamativo e Atrativo */
   .btn-investigation {
-    background: linear-gradient(135deg, hsl(var(--vhs-red)), hsl(var(--vhs-red) / 0.8));
-    border: 2px solid hsl(var(--vhs-red));
+    background: linear-gradient(135deg, hsl(var(--vhs-red)), hsl(var(--evidence-gold) / 0.3), hsl(var(--vhs-red)));
+    border: 2px solid hsl(var(--evidence-gold));
     color: hsl(var(--aged-paper));
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     transition: var(--transition-investigation);
-    box-shadow: var(--shadow-investigation);
+    box-shadow: 
+      var(--shadow-investigation),
+      0 0 20px hsl(var(--vhs-red) / 0.5),
+      inset 0 1px 0 hsl(var(--evidence-gold) / 0.3);
+    position: relative;
+    overflow: hidden;
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .btn-investigation::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, hsl(var(--vhs-red)), hsl(var(--evidence-gold)), hsl(var(--vhs-red)), hsl(var(--evidence-gold)));
+    border-radius: inherit;
+    z-index: -1;
+    background-size: 200% 200%;
+    animation: border-glow 3s ease-in-out infinite;
   }
 
   .btn-investigation:hover {
-    background: linear-gradient(135deg, hsl(var(--vhs-red) / 0.9), hsl(var(--vhs-red) / 0.7));
-    transform: scale(1.05);
+    background: linear-gradient(135deg, hsl(var(--evidence-gold)), hsl(var(--vhs-red) / 0.8), hsl(var(--evidence-gold)));
+    transform: scale(1.08) translateY(-3px);
     box-shadow: 
-      var(--shadow-investigation),
-      0 0 30px hsl(var(--vhs-red) / 0.6);
+      0 15px 40px hsl(var(--vhs-red) / 0.6),
+      0 0 60px hsl(var(--evidence-gold) / 0.8),
+      0 0 100px hsl(var(--vhs-red) / 0.4),
+      inset 0 2px 0 hsl(var(--aged-paper) / 0.2);
+    text-shadow: 0 0 15px hsl(var(--aged-paper));
+    animation: pulse-glow 1s ease-in-out infinite;
+  }
+
+  .btn-investigation:active {
+    transform: scale(1.02) translateY(-1px);
+  }
+
+  /* CTA Primary - Botão principal mais chamativo */
+  .btn-cta-primary {
+    background: linear-gradient(135deg, hsl(var(--evidence-gold)), hsl(var(--vhs-red) / 0.2), hsl(var(--evidence-gold)));
+    border: 3px solid hsl(var(--evidence-gold));
+    color: hsl(var(--carbon-black));
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: var(--transition-investigation);
+    box-shadow: 
+      0 8px 25px hsl(var(--evidence-gold) / 0.4),
+      0 0 40px hsl(var(--evidence-gold) / 0.6),
+      inset 0 2px 0 hsl(var(--aged-paper) / 0.3);
+    position: relative;
+    overflow: hidden;
+    animation: mega-pulse 2.5s ease-in-out infinite;
+  }
+
+  .btn-cta-primary::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background: linear-gradient(45deg, 
+      hsl(var(--evidence-gold)), 
+      hsl(var(--vhs-red)), 
+      hsl(var(--evidence-gold)), 
+      hsl(var(--vhs-red))
+    );
+    border-radius: inherit;
+    z-index: -1;
+    background-size: 300% 300%;
+    animation: mega-border-glow 2s ease-in-out infinite;
+  }
+
+  .btn-cta-primary:hover {
+    background: linear-gradient(135deg, hsl(var(--aged-paper)), hsl(var(--evidence-gold) / 0.3), hsl(var(--aged-paper)));
+    transform: scale(1.12) translateY(-5px);
+    box-shadow: 
+      0 20px 50px hsl(var(--evidence-gold) / 0.7),
+      0 0 80px hsl(var(--evidence-gold)),
+      0 0 120px hsl(var(--vhs-red) / 0.5),
+      inset 0 3px 0 hsl(var(--evidence-gold) / 0.4);
+    text-shadow: 0 0 20px hsl(var(--carbon-black));
+    animation: mega-pulse 1s ease-in-out infinite;
+  }
+
+  .btn-cta-primary:active {
+    transform: scale(1.05) translateY(-2px);
   }
 
   /* VHS Noise Animation */
@@ -338,6 +419,60 @@ All colors MUST be HSL - VHS 80s Investigation Theme
   }
   100% { 
     transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { 
+    box-shadow: 
+      0 8px 25px hsl(var(--vhs-red) / 0.4),
+      0 0 20px hsl(var(--vhs-red) / 0.5),
+      inset 0 1px 0 hsl(var(--evidence-gold) / 0.3);
+  }
+  50% { 
+    box-shadow: 
+      0 8px 25px hsl(var(--vhs-red) / 0.6),
+      0 0 30px hsl(var(--vhs-red) / 0.7),
+      0 0 50px hsl(var(--evidence-gold) / 0.4),
+      inset 0 1px 0 hsl(var(--evidence-gold) / 0.5);
+  }
+}
+
+@keyframes border-glow {
+  0%, 100% { 
+    background-position: 0% 50%; 
+  }
+  50% { 
+    background-position: 100% 50%; 
+  }
+}
+
+@keyframes mega-pulse {
+  0%, 100% { 
+    box-shadow: 
+      0 8px 25px hsl(var(--evidence-gold) / 0.4),
+      0 0 40px hsl(var(--evidence-gold) / 0.6),
+      inset 0 2px 0 hsl(var(--aged-paper) / 0.3);
+    transform: scale(1);
+  }
+  50% { 
+    box-shadow: 
+      0 12px 35px hsl(var(--evidence-gold) / 0.6),
+      0 0 60px hsl(var(--evidence-gold) / 0.8),
+      0 0 80px hsl(var(--vhs-red) / 0.3),
+      inset 0 3px 0 hsl(var(--aged-paper) / 0.5);
+    transform: scale(1.02);
+  }
+}
+
+@keyframes mega-border-glow {
+  0%, 100% { 
+    background-position: 0% 50%;
+    opacity: 0.8;
+  }
+  50% { 
+    background-position: 100% 50%;
     opacity: 1;
   }
 }
