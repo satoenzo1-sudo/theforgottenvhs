@@ -139,8 +139,7 @@ const IncludedSection = () => {
                 Evidência Visual Exclusiva
               </h3>
               <p className="text-lg font-mono text-aged-paper leading-relaxed">
-                Fotos da cena do crime, documentos manuscritos, mapas detalhados e muito mais. 
-                Tudo em alta resolução para uma experiência investigativa imersiva.
+                Fotos da cena do crime, documentos manuscritos, transcrições de fitas, laudos de autópsias, mapas detalhados e muito mais. Tudo em alta resolução para uma experiência investigativa imersiva.
               </p>
             </motion.div>
           </div>
