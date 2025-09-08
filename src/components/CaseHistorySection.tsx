@@ -66,7 +66,7 @@ const CaseHistorySection = () => {
               viewport={{ once: true }}
               className="text-base md:text-lg font-mono text-aged-paper leading-relaxed mb-6"
             >
-              Entre 1982 e 1985, o condado de Red Ridge, Tennessee, viveu uma sequência de crimes que nunca recebeu explicações oficiais. Em apenas três anos, sete mulheres foram encontradas mortas, todas em circunstâncias semelhantes, deixando registros fragmentados e inconsistentes.
+              Entre 1982 e 1985, o condado de Red Ridge, Tennessee, foi marcado por uma sucessão de mortes inexplicáveis. Em apenas três anos, sete mulheres foram assassinadas de forma semelhante, como se seguissem um padrão macabro que ninguém conseguia decifrar.
             </motion.p>
 
             <motion.p 
@@ -76,26 +76,26 @@ const CaseHistorySection = () => {
               viewport={{ once: true }}
               className="text-base md:text-lg font-mono text-aged-paper leading-relaxed mb-6"
             >
-              Em 1984, um suspeito foi preso — mas sua morte misteriosa, meses depois, levantou ainda mais dúvidas. Quando uma nova vítima surgiu após o falecimento dele, o caso foi arquivado às pressas, enterrado junto com as respostas que nunca vieram.
+              Em 1984, a prisão de um suspeito parecia encerrar o caso, mas sua morte repentina meses depois apenas aprofundou o mistério. Quando uma nova vítima surgiu após seu falecimento, as autoridades arquivaram o processo às pressas, deixando perguntas sem resposta e uma cidade inteira mergulhada no medo.
+            </motion.p>
+
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
+              viewport={{ once: true }}
+              className="text-base md:text-lg font-mono text-aged-paper leading-relaxed mb-6"
+            >
+              Desde então, o Caso Red Ridge permanece envolto em silêncio — entre documentos rasurados, investigações fragmentadas e versões oficiais que nunca se sustentaram.
             </motion.p>
 
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
+              transition={{ duration: 0.8, delay: 1.0 }}
               viewport={{ once: true }}
               className="my-8 h-px bg-gradient-to-r from-transparent via-evidence-gold to-transparent"
             />
-
-            <motion.p 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1.0 }}
-              viewport={{ once: true }}
-              className="text-base md:text-lg font-mono text-aged-paper leading-relaxed mb-6"
-            >
-              Entre os documentos recolhidos, uma fita ganhou destaque: VHS 13. Seu conteúdo reúne depoimentos truncados, laudos incompletos e imagens que parecem ter sido deliberadamente cortadas. Até hoje, ninguém sabe se o que ela mostra é a verdade… ou apenas uma parte dela.
-            </motion.p>
 
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
@@ -104,7 +104,7 @@ const CaseHistorySection = () => {
               viewport={{ once: true }}
               className="text-base md:text-lg font-mono text-aged-paper leading-relaxed mb-6"
             >
-              Por que esse caso foi abafado? Quem estava realmente por trás das mortes em Red Ridge? E, principalmente: o que o VHS 13 esconde?
+              O que realmente aconteceu em Red Ridge?
             </motion.p>
 
             {/* Challenge/Competition trigger */}

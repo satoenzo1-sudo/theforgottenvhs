@@ -58,7 +58,7 @@ const HeroSection = () => {
         ease: "easeOut",
         delay: 0.2
       }} className="mb-8">
-          <h1 className="text-4xl md:text-6xl font-typewriter font-bold text-aged-paper mb-4 block text-vhs-red">Você teria coragem de abrir um arquivo proibido e obscuro, esquecido há mais de 40 anos no interior dos Estados Unidos?</h1>
+          <h1 className="text-4xl md:text-6xl font-typewriter font-bold text-aged-paper mb-4 block text-vhs-red">Você teria coragem de abrir um arquivo obscuro, esquecido há mais de 40 anos no interior dos Estados Unidos?</h1>
           
           <motion.div initial={{
           opacity: 0,
