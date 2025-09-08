@@ -4,6 +4,7 @@ import CaseHistorySection from '@/components/CaseHistorySection';
 import VideoTestimonialSection from '@/components/VideoTestimonialSection';
 import CTASection from '@/components/CTASection';
 import HowItWorksSection from '@/components/HowItWorksSection';
+import IncludedSection from '@/components/IncludedSection';
 import TargetAudienceSection from '@/components/TargetAudienceSection';
 import EvidenceVisualSection from '@/components/EvidenceVisualSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
@@ -22,6 +23,7 @@ const Index = () => {
       <VideoTestimonialSection />
       <CTASection />
       <HowItWorksSection />
+      <IncludedSection />
       <TargetAudienceSection />
       <EvidenceVisualSection />
       <TestimonialsSection />
