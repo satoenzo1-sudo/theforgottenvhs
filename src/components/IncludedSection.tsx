@@ -36,8 +36,8 @@ const IncludedSection = () => {
     },
     {
       icon: Smartphone,
-      title: "🎵 Jogo viral TikTok",
-      description: "O jogo viral do tik tok no seu date",
+      title: "🎵 Jogo do momento",
+      description: "O jogo do momento no seu date",
       delay: 0.6
     }
   ];

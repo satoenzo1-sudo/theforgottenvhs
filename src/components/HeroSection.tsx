@@ -98,7 +98,7 @@ const HeroSection = () => {
         delay: 1.2,
         duration: 0.8
       }} className="case-file rounded-lg p-6 max-w-xl mx-auto mb-12">
-          <h3 className="text-xl font-typewriter text-evidence-gold mb-4">O jogo viral no TikTok para quem ama terror rural e mistério antigo.</h3>
+          <h3 className="text-xl font-typewriter text-evidence-gold mb-4">O jogo do momento para quem ama terror rural e mistério antigo.</h3>
           
           <div className="grid md:grid-cols-2 gap-4 text-center">
             <motion.div whileHover={{
