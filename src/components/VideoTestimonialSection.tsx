@@ -41,14 +41,14 @@ const VideoTestimonialSection = () => {
 
             {/* Video embed */}
             <div className="aspect-[9/16] relative rounded-lg overflow-hidden max-w-sm mx-auto border-2 border-evidence-gold">
-              <iframe 
-                src="https://fast.wistia.com/embed/iframe/eu0qqp84lt" 
-                title="Depoimento da Fernanda" 
-                frameBorder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowFullScreen 
-                className="w-full h-full"
-              />
+              <div dangerouslySetInnerHTML={{
+                __html: `
+                  <script src="https://fast.wistia.com/player.js" async></script>
+                  <script src="https://fast.wistia.com/embed/kwiki71jse.js" async type="module"></script>
+                  <style>wistia-player[media-id='kwiki71jse']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/kwiki71jse/swatch'); display: block; filter: blur(5px); padding-top:177.78%; }</style>
+                  <wistia-player media-id="kwiki71jse" aspect="0.5625" style="width: 100%; height: 100%;"></wistia-player>
+                `
+              }} />
             </div>
           </div>
         </motion.div>
