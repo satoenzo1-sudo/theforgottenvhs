@@ -7,6 +7,7 @@ import HowItWorksSection from '@/components/HowItWorksSection';
 import IncludedSection from '@/components/IncludedSection';
 import TargetAudienceSection from '@/components/TargetAudienceSection';
 import EvidenceVisualSection from '@/components/EvidenceVisualSection';
+import CasePreviewSection from '@/components/CasePreviewSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import PricingSection from '@/components/PricingSection';
 import FAQSection from '@/components/FAQSection';
@@ -26,6 +27,7 @@ const Index = () => {
       <IncludedSection />
       <TargetAudienceSection />
       <EvidenceVisualSection />
+      <CasePreviewSection />
       <TestimonialsSection />
       <PricingSection />
       <FAQSection />
