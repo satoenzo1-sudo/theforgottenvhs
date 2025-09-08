@@ -235,17 +235,17 @@ All colors MUST be HSL - VHS 80s Investigation Theme
 
   /* Investigation Button - Chamativo e Atrativo */
   .btn-investigation {
-    background: linear-gradient(135deg, hsl(var(--vhs-red)), hsl(var(--evidence-gold) / 0.3), hsl(var(--vhs-red)));
-    border: 2px solid hsl(var(--evidence-gold));
+    background: linear-gradient(135deg, hsl(var(--vhs-red)), hsl(var(--confidential-stamp) / 0.8), hsl(var(--vhs-red)));
+    border: 2px solid hsl(var(--vhs-red));
     color: hsl(var(--aged-paper));
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: var(--transition-investigation);
     box-shadow: 
-      var(--shadow-investigation),
-      0 0 20px hsl(var(--vhs-red) / 0.5),
-      inset 0 1px 0 hsl(var(--evidence-gold) / 0.3);
+      0 8px 25px hsl(var(--vhs-red) / 0.6),
+      0 0 20px hsl(var(--vhs-red) / 0.7),
+      inset 0 1px 0 hsl(var(--evidence-gold) / 0.2);
     position: relative;
     overflow: hidden;
     animation: pulse-glow 2s ease-in-out infinite;
@@ -258,7 +258,7 @@ All colors MUST be HSL - VHS 80s Investigation Theme
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: linear-gradient(45deg, hsl(var(--vhs-red)), hsl(var(--evidence-gold)), hsl(var(--vhs-red)), hsl(var(--evidence-gold)));
+    background: linear-gradient(45deg, hsl(var(--vhs-red)), hsl(var(--confidential-stamp)), hsl(var(--vhs-red)), hsl(var(--confidential-stamp)));
     border-radius: inherit;
     z-index: -1;
     background-size: 200% 200%;
@@ -266,12 +266,12 @@ All colors MUST be HSL - VHS 80s Investigation Theme
   }
 
   .btn-investigation:hover {
-    background: linear-gradient(135deg, hsl(var(--evidence-gold)), hsl(var(--vhs-red) / 0.8), hsl(var(--evidence-gold)));
+    background: linear-gradient(135deg, hsl(var(--confidential-stamp)), hsl(var(--vhs-red) / 0.9), hsl(var(--confidential-stamp)));
     transform: scale(1.08) translateY(-3px);
     box-shadow: 
-      0 15px 40px hsl(var(--vhs-red) / 0.6),
-      0 0 60px hsl(var(--evidence-gold) / 0.8),
-      0 0 100px hsl(var(--vhs-red) / 0.4),
+      0 15px 40px hsl(var(--vhs-red) / 0.8),
+      0 0 60px hsl(var(--confidential-stamp) / 0.9),
+      0 0 100px hsl(var(--vhs-red) / 0.6),
       inset 0 2px 0 hsl(var(--aged-paper) / 0.2);
     text-shadow: 0 0 15px hsl(var(--aged-paper));
     animation: pulse-glow 1s ease-in-out infinite;
@@ -283,17 +283,17 @@ All colors MUST be HSL - VHS 80s Investigation Theme
 
   /* CTA Primary - Botão principal mais chamativo */
   .btn-cta-primary {
-    background: linear-gradient(135deg, hsl(var(--evidence-gold)), hsl(var(--vhs-red) / 0.2), hsl(var(--evidence-gold)));
-    border: 3px solid hsl(var(--evidence-gold));
-    color: hsl(var(--carbon-black));
+    background: linear-gradient(135deg, hsl(var(--vhs-red)), hsl(var(--confidential-stamp) / 0.5), hsl(var(--vhs-red)));
+    border: 3px solid hsl(var(--vhs-red));
+    color: hsl(var(--aged-paper));
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 3px;
     transition: var(--transition-investigation);
     box-shadow: 
-      0 8px 25px hsl(var(--evidence-gold) / 0.4),
-      0 0 40px hsl(var(--evidence-gold) / 0.6),
-      inset 0 2px 0 hsl(var(--aged-paper) / 0.3);
+      0 8px 25px hsl(var(--vhs-red) / 0.6),
+      0 0 40px hsl(var(--vhs-red) / 0.8),
+      inset 0 2px 0 hsl(var(--aged-paper) / 0.2);
     position: relative;
     overflow: hidden;
     animation: mega-pulse 2.5s ease-in-out infinite;
@@ -307,10 +307,10 @@ All colors MUST be HSL - VHS 80s Investigation Theme
     right: -3px;
     bottom: -3px;
     background: linear-gradient(45deg, 
-      hsl(var(--evidence-gold)), 
       hsl(var(--vhs-red)), 
-      hsl(var(--evidence-gold)), 
-      hsl(var(--vhs-red))
+      hsl(var(--confidential-stamp)), 
+      hsl(var(--vhs-red)), 
+      hsl(var(--confidential-stamp))
     );
     border-radius: inherit;
     z-index: -1;
@@ -319,14 +319,14 @@ All colors MUST be HSL - VHS 80s Investigation Theme
   }
 
   .btn-cta-primary:hover {
-    background: linear-gradient(135deg, hsl(var(--aged-paper)), hsl(var(--evidence-gold) / 0.3), hsl(var(--aged-paper)));
+    background: linear-gradient(135deg, hsl(var(--confidential-stamp)), hsl(var(--vhs-red) / 0.8), hsl(var(--confidential-stamp)));
     transform: scale(1.12) translateY(-5px);
     box-shadow: 
-      0 20px 50px hsl(var(--evidence-gold) / 0.7),
-      0 0 80px hsl(var(--evidence-gold)),
-      0 0 120px hsl(var(--vhs-red) / 0.5),
-      inset 0 3px 0 hsl(var(--evidence-gold) / 0.4);
-    text-shadow: 0 0 20px hsl(var(--carbon-black));
+      0 20px 50px hsl(var(--vhs-red) / 0.9),
+      0 0 80px hsl(var(--confidential-stamp)),
+      0 0 120px hsl(var(--vhs-red) / 0.7),
+      inset 0 3px 0 hsl(var(--aged-paper) / 0.3);
+    text-shadow: 0 0 20px hsl(var(--aged-paper));
     animation: mega-pulse 1s ease-in-out infinite;
   }
 
@@ -426,16 +426,16 @@ All colors MUST be HSL - VHS 80s Investigation Theme
 @keyframes pulse-glow {
   0%, 100% { 
     box-shadow: 
-      0 8px 25px hsl(var(--vhs-red) / 0.4),
-      0 0 20px hsl(var(--vhs-red) / 0.5),
-      inset 0 1px 0 hsl(var(--evidence-gold) / 0.3);
+      0 8px 25px hsl(var(--vhs-red) / 0.6),
+      0 0 20px hsl(var(--vhs-red) / 0.7),
+      inset 0 1px 0 hsl(var(--evidence-gold) / 0.2);
   }
   50% { 
     box-shadow: 
-      0 8px 25px hsl(var(--vhs-red) / 0.6),
-      0 0 30px hsl(var(--vhs-red) / 0.7),
-      0 0 50px hsl(var(--evidence-gold) / 0.4),
-      inset 0 1px 0 hsl(var(--evidence-gold) / 0.5);
+      0 8px 25px hsl(var(--vhs-red) / 0.8),
+      0 0 30px hsl(var(--vhs-red) / 0.9),
+      0 0 50px hsl(var(--confidential-stamp) / 0.6),
+      inset 0 1px 0 hsl(var(--evidence-gold) / 0.3);
   }
 }
 
@@ -451,17 +451,17 @@ All colors MUST be HSL - VHS 80s Investigation Theme
 @keyframes mega-pulse {
   0%, 100% { 
     box-shadow: 
-      0 8px 25px hsl(var(--evidence-gold) / 0.4),
-      0 0 40px hsl(var(--evidence-gold) / 0.6),
-      inset 0 2px 0 hsl(var(--aged-paper) / 0.3);
+      0 8px 25px hsl(var(--vhs-red) / 0.6),
+      0 0 40px hsl(var(--vhs-red) / 0.8),
+      inset 0 2px 0 hsl(var(--aged-paper) / 0.2);
     transform: scale(1);
   }
   50% { 
     box-shadow: 
-      0 12px 35px hsl(var(--evidence-gold) / 0.6),
-      0 0 60px hsl(var(--evidence-gold) / 0.8),
-      0 0 80px hsl(var(--vhs-red) / 0.3),
-      inset 0 3px 0 hsl(var(--aged-paper) / 0.5);
+      0 12px 35px hsl(var(--vhs-red) / 0.8),
+      0 0 60px hsl(var(--confidential-stamp) / 0.9),
+      0 0 80px hsl(var(--vhs-red) / 0.5),
+      inset 0 3px 0 hsl(var(--aged-paper) / 0.3);
     transform: scale(1.02);
   }
 }
