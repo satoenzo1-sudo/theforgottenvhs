@@ -58,7 +58,7 @@ const CTASection = () => {
               }}
               whileTap={{ scale: 1.02 }}
               className="btn-cta-primary text-xl px-12 py-6 font-typewriter tracking-wider rounded-lg relative overflow-hidden"
-              onClick={() => window.open('https://pay.kiwify.com.br/0Ja4ags', '_blank')}
+              onClick={() => window.open('https://pay.cakto.com.br/3buxx9f_586459', '_blank')}
             >
               <motion.div 
                 className="absolute inset-0 bg-gradient-to-r from-transparent via-aged-paper/10 to-transparent"

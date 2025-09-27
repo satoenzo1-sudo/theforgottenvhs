@@ -186,7 +186,7 @@ const PricingSection = () => {
               }} 
               whileTap={{ scale: 1.05 }}
               className="btn-cta-primary px-12 py-6 text-xl font-bold rounded-lg w-full md:w-auto relative overflow-hidden" 
-              onClick={() => window.open('https://pay.kiwify.com.br/0Ja4ags', '_blank')}
+              onClick={() => window.open('https://pay.cakto.com.br/3buxx9f_586459', '_blank')}
             >
               <motion.div 
                 className="absolute inset-0 vhs-scanlines opacity-0" 
