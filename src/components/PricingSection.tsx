@@ -137,7 +137,7 @@ const PricingSection = () => {
               </div>
               
               <p className="font-mono text-vhs-red text-xl font-bold">
-                Menos que o preço de uma pizza para viver uma noite inteira de investigação e mistério.
+                Surpreenda seu amor e viva uma noite de investigação e mistério por menos que o preço de um hambúrguer.
               </p>
               
               {/* Countdown Timer */}
