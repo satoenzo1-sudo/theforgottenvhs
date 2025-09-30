@@ -1,7 +1,11 @@
 import { motion } from 'framer-motion';
 import { ShieldCheck, Zap, Download } from 'lucide-react';
 import CountdownTimer from './CountdownTimer';
+import { useShouldDisableAnimations } from '@/hooks/use-reduced-motion';
+
 const PricingSection = () => {
+  const disableAnimations = useShouldDisableAnimations();
+  
   return <section id="pricing" className="py-20 relative overflow-hidden">
       <div className="absolute inset-0 vhs-noise opacity-20"></div>
       
@@ -18,11 +22,11 @@ const PricingSection = () => {
       once: true
     }} className="container mx-auto px-4 relative z-10 mb-12">
         <div className="text-center">
-          <motion.div className="inline-block bg-vhs-red/20 border-2 border-vhs-red px-8 py-4 rounded-lg" animate={{
+          <motion.div className="inline-block bg-vhs-red/20 border-2 border-vhs-red px-8 py-4 rounded-lg" animate={disableAnimations ? {} : {
           borderColor: ['hsl(var(--vhs-red))', 'hsl(var(--evidence-gold))', 'hsl(var(--vhs-red))']
         }} transition={{
           duration: 3,
-          repeat: Infinity,
+          repeat: disableAnimations ? 0 : Infinity,
           ease: "linear"
         }}>
             <p className="font-mono text-vhs-red font-bold text-xl">
@@ -53,11 +57,11 @@ const PricingSection = () => {
             <div className="absolute inset-0 vhs-scanlines opacity-10 rounded-lg"></div>
             
             {/* Confidential stamps */}
-            <motion.div className="absolute -top-6 -right-6 stamp text-sm" animate={{
+            <motion.div className="absolute -top-6 -right-6 stamp text-sm" animate={disableAnimations ? {} : {
             rotate: [15, 18, 15]
           }} transition={{
             duration: 4,
-            repeat: Infinity,
+            repeat: disableAnimations ? 0 : Infinity,
             ease: "easeInOut"
           }}>
               ACESSO LIBERADO
@@ -194,8 +198,8 @@ const PricingSection = () => {
               />
               <motion.div 
                 className="absolute inset-0 bg-gradient-to-r from-transparent via-aged-paper/10 to-transparent" 
-                animate={{ x: ['-100%', '100%'] }} 
-                transition={{ duration: 3, repeat: Infinity, ease: "linear" }} 
+                animate={disableAnimations ? {} : { x: ['-100%', '100%'] }} 
+                transition={{ duration: 3, repeat: disableAnimations ? 0 : Infinity, ease: "linear" }} 
               />
               <motion.span 
                 className="relative z-10" 

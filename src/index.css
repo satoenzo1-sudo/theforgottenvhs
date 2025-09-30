@@ -496,3 +496,36 @@ All colors MUST be HSL - VHS 80s Investigation Theme
   will-change: transform;
   transform: translateZ(0);
 }
+
+/* Mobile Performance Optimizations */
+@media (max-width: 768px) {
+  /* Reduce animation complexity on mobile */
+  .stamp {
+    animation: none !important;
+  }
+  
+  .vhs-scanlines {
+    opacity: 0.05 !important;
+  }
+  
+  .vhs-noise {
+    opacity: 0.1 !important;
+  }
+  
+  /* Simplify shadows on mobile */
+  .case-file,
+  .evidence-card {
+    box-shadow: 0 4px 10px hsl(0 0% 0% / 0.3) !important;
+  }
+}
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

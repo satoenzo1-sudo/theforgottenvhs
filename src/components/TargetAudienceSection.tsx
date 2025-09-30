@@ -1,6 +1,9 @@
 import { motion } from 'framer-motion';
 import { Heart, Users, Search } from 'lucide-react';
+import { useShouldDisableAnimations } from '@/hooks/use-reduced-motion';
+
 const TargetAudienceSection = () => {
+  const disableAnimations = useShouldDisableAnimations();
   const targetGroups = [{
     icon: Heart,
     text: "Para casais que querem um date diferente",
@@ -125,8 +128,8 @@ const TargetAudienceSection = () => {
             >
               <motion.div 
                 className="absolute inset-0 bg-gradient-to-r from-transparent via-evidence-gold/8 to-transparent"
-                animate={{ x: ['-100%', '100%'] }}
-                transition={{ duration: 3.5, repeat: Infinity, ease: "linear" }}
+                animate={disableAnimations ? {} : { x: ['-100%', '100%'] }}
+                transition={{ duration: 3.5, repeat: disableAnimations ? 0 : Infinity, ease: "linear" }}
               />
               <motion.span 
                 className="relative z-10" 
@@ -151,12 +154,12 @@ const TargetAudienceSection = () => {
         }} viewport={{
           once: true
         }} className="text-center mt-16">
-            <motion.div animate={{
+            <motion.div animate={disableAnimations ? {} : {
             y: [0, 8, 0],
             opacity: [0.7, 1, 0.7]
           }} transition={{
             duration: 3,
-            repeat: Infinity,
+            repeat: disableAnimations ? 0 : Infinity,
             ease: "easeInOut"
           }} className="text-evidence-gold text-3xl">
               ↓

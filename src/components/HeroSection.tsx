@@ -1,28 +1,32 @@
 import { motion } from 'framer-motion';
 import { FileX, Zap, Gamepad2 } from 'lucide-react';
+import { useShouldDisableAnimations } from '@/hooks/use-reduced-motion';
+
 const HeroSection = () => {
+  const disableAnimations = useShouldDisableAnimations();
+  
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden vhs-noise pt-20">
       {/* Background VHS Static Effect */}
       <div className="absolute inset-0 vhs-scanlines opacity-40"></div>
       
       {/* Floating Confidential Stamps */}
-      <motion.div className="absolute top-20 left-10 stamp text-xs opacity-30" animate={{
+      <motion.div className="absolute top-20 left-10 stamp text-xs opacity-30" animate={disableAnimations ? {} : {
       rotate: [-15, -18, -15],
       scale: [1, 1.05, 1]
     }} transition={{
       duration: 5,
-      repeat: Infinity,
+      repeat: disableAnimations ? 0 : Infinity,
       ease: "easeInOut"
     }}>
         CONFIDENCIAL
       </motion.div>
       
-      <motion.div className="absolute bottom-32 right-12 stamp text-xs opacity-20" animate={{
+      <motion.div className="absolute bottom-32 right-12 stamp text-xs opacity-20" animate={disableAnimations ? {} : {
       rotate: [12, 15, 12],
       scale: [0.9, 1.1, 0.9]
     }} transition={{
       duration: 6,
-      repeat: Infinity,
+      repeat: disableAnimations ? 0 : Infinity,
       ease: "easeInOut",
       delay: 1
     }}>
@@ -127,11 +131,11 @@ const HeroSection = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <motion.div className="absolute bottom-8 left-1/2 transform -translate-x-1/2" animate={{
+      <motion.div className="absolute bottom-8 left-1/2 transform -translate-x-1/2" animate={disableAnimations ? {} : {
       y: [0, 8, 0]
     }} transition={{
       duration: 2.5,
-      repeat: Infinity,
+      repeat: disableAnimations ? 0 : Infinity,
       ease: "easeInOut"
     }}>
         

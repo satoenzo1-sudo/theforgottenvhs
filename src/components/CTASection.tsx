@@ -1,7 +1,11 @@
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import CountdownTimer from './CountdownTimer';
+import { useShouldDisableAnimations } from '@/hooks/use-reduced-motion';
+
 const CTASection = () => {
+  const disableAnimations = useShouldDisableAnimations();
+  
   return <section className="py-16 relative overflow-hidden">
       <div className="absolute inset-0 vhs-noise opacity-10"></div>
       
@@ -68,11 +72,11 @@ const CTASection = () => {
           }} whileTap={{
             scale: 1.02
           }} className="btn-cta-primary text-xl px-12 py-6 font-typewriter tracking-wider rounded-lg relative overflow-hidden" onClick={() => window.open('https://pay.cakto.com.br/3buxx9f_586459', '_blank')}>
-              <motion.div className="absolute inset-0 bg-gradient-to-r from-transparent via-aged-paper/10 to-transparent" animate={{
+              <motion.div className="absolute inset-0 bg-gradient-to-r from-transparent via-aged-paper/10 to-transparent" animate={disableAnimations ? {} : {
               x: ['-100%', '100%']
             }} transition={{
               duration: 3,
-              repeat: Infinity,
+              repeat: disableAnimations ? 0 : Infinity,
               ease: "linear"
             }} />
               <span className="relative z-10">🔥 COMECE A INVESTIGAR AGORA! 🔥</span>
