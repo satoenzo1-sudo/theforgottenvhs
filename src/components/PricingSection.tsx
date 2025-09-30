@@ -121,7 +121,7 @@ const PricingSection = () => {
                   </span>
                   <span className="text-2xl font-mono text-aged-paper">→</span>
                   <span className="text-6xl md:text-7xl font-typewriter text-evidence-gold font-bold">
-                    R$ 27,90
+                    R$ 19,90
                   </span>
                 </div>
                 
