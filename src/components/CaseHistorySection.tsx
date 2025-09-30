@@ -31,11 +31,11 @@ const CaseHistorySection = () => {
             <motion.div 
               className="absolute -top-4 -right-4 stamp text-xs"
               animate={{ 
-                rotate: [15, 12, 18, 15],
-                scale: [0.8, 1, 0.9, 0.8]
+                rotate: [15, 18, 15],
+                scale: [0.9, 1, 0.9]
               }}
               transition={{ 
-                duration: 3, 
+                duration: 4, 
                 repeat: Infinity,
                 ease: "easeInOut"
               }}
@@ -46,11 +46,11 @@ const CaseHistorySection = () => {
             <motion.div 
               className="absolute -bottom-6 -left-6 stamp text-xs opacity-60"
               animate={{ 
-                rotate: [-12, -8, -15, -12],
-                scale: [0.9, 1.1, 0.8, 0.9]
+                rotate: [-12, -15, -12],
+                scale: [0.9, 1.05, 0.9]
               }}
               transition={{ 
-                duration: 4, 
+                duration: 5, 
                 repeat: Infinity,
                 ease: "easeInOut",
                 delay: 1.5

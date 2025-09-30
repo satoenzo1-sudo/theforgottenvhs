@@ -33,8 +33,8 @@ const VideoTestimonialSection = () => {
             {/* Confidential watermark */}
             <motion.div 
               className="absolute top-4 right-4 stamp text-xs opacity-30" 
-              animate={{ rotate: [12, 15, 10, 12], scale: [0.8, 1, 0.9, 0.8] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+              animate={{ rotate: [12, 15, 12], scale: [0.9, 1, 0.9] }}
+              transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
             >
               CONFIDENCIAL
             </motion.div>
@@ -62,8 +62,8 @@ const VideoTestimonialSection = () => {
           className="flex justify-center"
         >
           <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            animate={{ y: [0, 8, 0] }}
+            transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
             className="text-evidence-gold"
           >
             <ChevronDown className="w-8 h-8" />

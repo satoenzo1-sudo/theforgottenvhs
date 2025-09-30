@@ -124,10 +124,10 @@ const TestimonialsSection = () => {
             
             {/* Confidential watermark */}
             <motion.div className="absolute top-4 right-4 stamp text-xs opacity-30" animate={{
-            rotate: [12, 15, 10, 12],
-            scale: [0.8, 1, 0.9, 0.8]
+            rotate: [12, 15, 12],
+            scale: [0.9, 1, 0.9]
           }} transition={{
-            duration: 4,
+            duration: 5,
             repeat: Infinity,
             ease: "easeInOut"
           }}>

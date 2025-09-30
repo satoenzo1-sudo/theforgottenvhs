@@ -71,8 +71,8 @@ const Footer = () => {
             </p>
             <motion.p 
               className="font-mono text-muted-foreground text-xs mt-2 opacity-60"
-              animate={{ opacity: [0.6, 0.3, 0.6] }}
-              transition={{ duration: 3, repeat: Infinity }}
+              animate={{ opacity: [0.6, 0.4, 0.6] }}
+              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             >
               "A verdade está nas evidências..."
             </motion.p>

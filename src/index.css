@@ -476,3 +476,23 @@ All colors MUST be HSL - VHS 80s Investigation Theme
     opacity: 1;
   }
 }
+
+/* Performance Optimizations */
+.motion-reduce {
+  animation: none !important;
+  transition: none !important;
+}
+
+/* Hardware acceleration for animations */
+[class*="motion-"] {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.stamp,
+.vhs-scanlines,
+.vhs-noise {
+  will-change: transform;
+  transform: translateZ(0);
+}

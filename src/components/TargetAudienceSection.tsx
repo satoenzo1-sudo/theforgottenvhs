@@ -124,9 +124,9 @@ const TargetAudienceSection = () => {
               }}
             >
               <motion.div 
-                className="absolute inset-0 bg-gradient-to-r from-transparent via-evidence-gold/10 to-transparent"
+                className="absolute inset-0 bg-gradient-to-r from-transparent via-evidence-gold/8 to-transparent"
                 animate={{ x: ['-100%', '100%'] }}
-                transition={{ duration: 2.5, repeat: Infinity, ease: "linear" }}
+                transition={{ duration: 3.5, repeat: Infinity, ease: "linear" }}
               />
               <motion.span 
                 className="relative z-10" 
@@ -152,10 +152,10 @@ const TargetAudienceSection = () => {
           once: true
         }} className="text-center mt-16">
             <motion.div animate={{
-            y: [0, 10, 0],
-            opacity: [0.6, 1, 0.6]
+            y: [0, 8, 0],
+            opacity: [0.7, 1, 0.7]
           }} transition={{
-            duration: 2,
+            duration: 3,
             repeat: Infinity,
             ease: "easeInOut"
           }} className="text-evidence-gold text-3xl">

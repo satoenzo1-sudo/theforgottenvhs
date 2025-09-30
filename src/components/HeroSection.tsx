@@ -7,10 +7,10 @@ const HeroSection = () => {
       
       {/* Floating Confidential Stamps */}
       <motion.div className="absolute top-20 left-10 stamp text-xs opacity-30" animate={{
-      rotate: [-15, -12, -18, -15],
-      scale: [1, 1.1, 0.9, 1]
+      rotate: [-15, -18, -15],
+      scale: [1, 1.05, 1]
     }} transition={{
-      duration: 4,
+      duration: 5,
       repeat: Infinity,
       ease: "easeInOut"
     }}>
@@ -18,10 +18,10 @@ const HeroSection = () => {
       </motion.div>
       
       <motion.div className="absolute bottom-32 right-12 stamp text-xs opacity-20" animate={{
-      rotate: [12, 8, 15, 12],
-      scale: [0.8, 1.2, 0.9, 0.8]
+      rotate: [12, 15, 12],
+      scale: [0.9, 1.1, 0.9]
     }} transition={{
-      duration: 5,
+      duration: 6,
       repeat: Infinity,
       ease: "easeInOut",
       delay: 1
@@ -128,10 +128,11 @@ const HeroSection = () => {
 
       {/* Scroll Indicator */}
       <motion.div className="absolute bottom-8 left-1/2 transform -translate-x-1/2" animate={{
-      y: [0, 10, 0]
+      y: [0, 8, 0]
     }} transition={{
-      duration: 2,
-      repeat: Infinity
+      duration: 2.5,
+      repeat: Infinity,
+      ease: "easeInOut"
     }}>
         
       </motion.div>

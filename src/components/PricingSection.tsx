@@ -19,11 +19,11 @@ const PricingSection = () => {
     }} className="container mx-auto px-4 relative z-10 mb-12">
         <div className="text-center">
           <motion.div className="inline-block bg-vhs-red/20 border-2 border-vhs-red px-8 py-4 rounded-lg" animate={{
-          scale: [1, 1.02, 1],
           borderColor: ['hsl(var(--vhs-red))', 'hsl(var(--evidence-gold))', 'hsl(var(--vhs-red))']
         }} transition={{
-          duration: 2,
-          repeat: Infinity
+          duration: 3,
+          repeat: Infinity,
+          ease: "linear"
         }}>
             <p className="font-mono text-vhs-red font-bold text-xl">
               🚨 ÚLTIMAS HORAS DA PROMOÇÃO
@@ -54,10 +54,9 @@ const PricingSection = () => {
             
             {/* Confidential stamps */}
             <motion.div className="absolute -top-6 -right-6 stamp text-sm" animate={{
-            rotate: [15, 12, 18, 15],
-            scale: [0.8, 1, 0.9, 0.8]
+            rotate: [15, 18, 15]
           }} transition={{
-            duration: 3,
+            duration: 4,
             repeat: Infinity,
             ease: "easeInOut"
           }}>
@@ -194,9 +193,9 @@ const PricingSection = () => {
                 transition={{ duration: 0.3 }} 
               />
               <motion.div 
-                className="absolute inset-0 bg-gradient-to-r from-transparent via-aged-paper/15 to-transparent" 
+                className="absolute inset-0 bg-gradient-to-r from-transparent via-aged-paper/10 to-transparent" 
                 animate={{ x: ['-100%', '100%'] }} 
-                transition={{ duration: 2.5, repeat: Infinity, ease: "linear" }} 
+                transition={{ duration: 3, repeat: Infinity, ease: "linear" }} 
               />
               <motion.span 
                 className="relative z-10" 
