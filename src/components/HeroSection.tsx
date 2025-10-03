@@ -5,9 +5,9 @@ import { useShouldDisableAnimations } from '@/hooks/use-reduced-motion';
 const HeroSection = () => {
   const disableAnimations = useShouldDisableAnimations();
   
-  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden vhs-noise pt-20">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden vhs-noise pt-20" style={{ opacity: 1 }}>
       {/* Background VHS Static Effect */}
-      <div className="absolute inset-0 vhs-scanlines opacity-40"></div>
+      <div className="absolute inset-0 vhs-scanlines opacity-40" style={{ opacity: 0.4 }}></div>
       
       {/* Floating Confidential Stamps */}
       <motion.div className="absolute top-20 left-10 stamp text-xs opacity-30" animate={disableAnimations ? {} : {
@@ -36,13 +36,13 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 text-center relative z-10">
         {/* Pre-title */}
         <motion.div initial={{
-        opacity: 0,
-        y: 30
+        opacity: 1,
+        y: 0
       }} animate={{
         opacity: 1,
         y: 0
       }} transition={{
-        duration: 0.6,
+        duration: 0.4,
         ease: "easeOut"
       }} className="mb-6">
           <p className="text-lg md:text-xl font-mono text-evidence-gold tracking-widest">
@@ -52,27 +52,26 @@ const HeroSection = () => {
 
         {/* Main Title with Glitch Effect */}
         <motion.div initial={{
-        opacity: 0,
-        y: 50
+        opacity: 1,
+        y: 0
       }} animate={{
         opacity: 1,
         y: 0
       }} transition={{
-        duration: 0.8,
-        ease: "easeOut",
-        delay: 0.2
+        duration: 0.6,
+        ease: "easeOut"
       }} className="mb-8">
           <h1 className="text-4xl md:text-6xl font-typewriter font-bold text-aged-paper mb-4 block text-vhs-red">Você teria coragem de abrir um arquivo misterioso, esquecido há mais de 40 anos no interior dos Estados Unidos?</h1>
           
           <motion.div initial={{
-          opacity: 0,
-          scale: 0.8
+          opacity: 1,
+          scale: 1
         }} animate={{
           opacity: 1,
           scale: 1
         }} transition={{
-          delay: 0.8,
-          duration: 0.6
+          delay: 0.2,
+          duration: 0.4
         }} className="inline-block px-6 py-2 border-2 border-vhs-red text-vhs-red font-mono font-bold text-xl tracking-widest">
             VHS 13
           </motion.div>
@@ -80,27 +79,27 @@ const HeroSection = () => {
 
         {/* Subtitle */}
         <motion.p initial={{
-        opacity: 0,
-        y: 30
+        opacity: 1,
+        y: 0
       }} animate={{
         opacity: 1,
         y: 0
       }} transition={{
-        delay: 1,
-        duration: 0.8
+        delay: 0.3,
+        duration: 0.6
       }} className="text-xl md:text-2xl font-serif-italic text-aged-paper max-w-4xl mx-auto mb-8 leading-relaxed">Entre páginas amareladas, laudos borrados e fotografias que nunca deveriam ter sido reveladas, repousa um mistério que o tempo tentou enterrar.</motion.p>
 
 
         {/* Quick Highlight Section */}
         <motion.div initial={{
-        opacity: 0,
-        y: 30
+        opacity: 1,
+        y: 0
       }} animate={{
         opacity: 1,
         y: 0
       }} transition={{
-        delay: 1.2,
-        duration: 0.8
+        delay: 0.4,
+        duration: 0.6
       }} className="case-file rounded-lg p-6 max-w-xl mx-auto mb-12">
           <h3 className="text-xl font-typewriter text-evidence-gold mb-4">O jogo do momento para quem ama terror rural e mistério antigo.</h3>
           
