@@ -5,9 +5,9 @@ import { useShouldDisableAnimations } from '@/hooks/use-reduced-motion';
 const HeroSection = () => {
   const disableAnimations = useShouldDisableAnimations();
   
-  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden vhs-noise pt-20" style={{ opacity: 1 }}>
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden vhs-noise pt-20">
       {/* Background VHS Static Effect */}
-      <div className="absolute inset-0 vhs-scanlines opacity-40" style={{ opacity: 0.4 }}></div>
+      <div className="absolute inset-0 vhs-scanlines opacity-40 z-0"></div>
       
       {/* Floating Confidential Stamps */}
       <motion.div className="absolute top-20 left-10 stamp text-xs opacity-30" animate={disableAnimations ? {} : {
@@ -33,7 +33,7 @@ const HeroSection = () => {
         CASO FECHADO
       </motion.div>
 
-      <div className="container mx-auto px-4 text-center relative z-10">
+      <div className="container mx-auto px-4 text-center relative z-20">
         {/* Pre-title */}
         <motion.div initial={{
         opacity: 1,

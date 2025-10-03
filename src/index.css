@@ -192,7 +192,7 @@ All colors MUST be HSL - VHS 80s Investigation Theme
       hsl(var(--foreground) / 0.03) 4px
     );
     pointer-events: none;
-    z-index: 10;
+    z-index: 1;
   }
 
   /* Case File Paper Effect */
@@ -353,7 +353,7 @@ All colors MUST be HSL - VHS 80s Investigation Theme
     background-size: 3px 3px, 7px 7px;
     animation: vhs-static 0.1s infinite linear;
     pointer-events: none;
-    z-index: 5;
+    z-index: 1;
   }
 }
 
