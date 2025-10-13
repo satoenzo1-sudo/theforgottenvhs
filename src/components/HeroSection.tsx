@@ -5,7 +5,7 @@ import { useShouldDisableAnimations } from '@/hooks/use-reduced-motion';
 const HeroSection = () => {
   const disableAnimations = useShouldDisableAnimations();
   
-  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-40 md:pt-24">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-48 md:pt-32">
       {/* Background VHS Static Effect - Removed temporarily */}
       
       {/* Floating Confidential Stamps */}
