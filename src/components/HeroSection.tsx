@@ -1,10 +1,8 @@
 import { motion } from 'framer-motion';
 import { FileX, Zap, Gamepad2 } from 'lucide-react';
 import { useShouldDisableAnimations } from '@/hooks/use-reduced-motion';
-
 const HeroSection = () => {
   const disableAnimations = useShouldDisableAnimations();
-  
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-56 md:pt-40">
       {/* Background VHS Static Effect - Removed temporarily */}
       
@@ -60,7 +58,7 @@ const HeroSection = () => {
         duration: 0.6,
         ease: "easeOut"
       }} className="mb-8">
-          <h1 className="text-4xl md:text-6xl font-typewriter font-bold text-aged-paper mb-4 block text-vhs-red">Você teria coragem de abrir um arquivo misterioso, esquecido há mais de 40 anos no interior dos Estados Unidos?</h1>
+          <h1 className="text-4xl md:text-6xl font-typewriter font-bold text-aged-paper mb-4 block text-vhs-red">Transforme seus dates em uma noite de investigação criminal?</h1>
           
           <motion.div initial={{
           opacity: 1,
