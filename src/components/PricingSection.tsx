@@ -2,10 +2,8 @@ import { motion } from 'framer-motion';
 import { ShieldCheck, Zap, Download } from 'lucide-react';
 import CountdownTimer from './CountdownTimer';
 import { useShouldDisableAnimations } from '@/hooks/use-reduced-motion';
-
 const PricingSection = () => {
   const disableAnimations = useShouldDisableAnimations();
-  
   return <section id="pricing" className="py-20 relative overflow-hidden">
       <div className="absolute inset-0 vhs-noise opacity-20"></div>
       
@@ -29,9 +27,7 @@ const PricingSection = () => {
           repeat: disableAnimations ? 0 : Infinity,
           ease: "linear"
         }}>
-            <p className="font-mono text-vhs-red font-bold text-xl">
-              🚨 ÚLTIMAS HORAS DA PROMOÇÃO
-            </p>
+            <p className="font-mono text-vhs-red font-bold text-xl">🚨 ÚLTIMAS HORAS DA PROMOÇÃO DE HALOWEEN</p>
             <p className="font-mono text-aged-paper text-lg mt-2">
               Preço volta para R$ 57,00 em breve. Não perca esta oportunidade!
             </p>
@@ -176,36 +172,42 @@ const PricingSection = () => {
 
 
             {/* CTA Button */}
-            <motion.button 
-              initial={{ opacity: 0, y: 30 }} 
-              whileInView={{ opacity: 1, y: 0 }} 
-              transition={{ duration: 0.8, delay: 0.8 }} 
-              viewport={{ once: true }} 
-              whileHover={{
-                scale: 1.12,
-                y: -5,
-                boxShadow: "0 20px 50px hsl(var(--evidence-gold) / 0.7), 0 0 80px hsl(var(--evidence-gold)), 0 0 120px hsl(var(--vhs-red) / 0.5)",
-                textShadow: "0 0 20px hsl(var(--carbon-black))"
-              }} 
-              whileTap={{ scale: 1.05 }}
-              className="btn-cta-primary px-12 py-6 text-xl font-bold rounded-lg w-full md:w-auto relative overflow-hidden" 
-              onClick={() => window.open('https://pay.cakto.com.br/3buxx9f_586459', '_blank')}
-            >
-              <motion.div 
-                className="absolute inset-0 vhs-scanlines opacity-0" 
-                whileHover={{ opacity: 0.4 }} 
-                transition={{ duration: 0.3 }} 
-              />
-              <motion.div 
-                className="absolute inset-0 bg-gradient-to-r from-transparent via-aged-paper/10 to-transparent" 
-                animate={disableAnimations ? {} : { x: ['-100%', '100%'] }} 
-                transition={{ duration: 3, repeat: disableAnimations ? 0 : Infinity, ease: "linear" }} 
-              />
-              <motion.span 
-                className="relative z-10" 
-                whileHover={{ y: -3 }} 
-                transition={{ duration: 0.2 }}
-              >
+            <motion.button initial={{
+            opacity: 0,
+            y: 30
+          }} whileInView={{
+            opacity: 1,
+            y: 0
+          }} transition={{
+            duration: 0.8,
+            delay: 0.8
+          }} viewport={{
+            once: true
+          }} whileHover={{
+            scale: 1.12,
+            y: -5,
+            boxShadow: "0 20px 50px hsl(var(--evidence-gold) / 0.7), 0 0 80px hsl(var(--evidence-gold)), 0 0 120px hsl(var(--vhs-red) / 0.5)",
+            textShadow: "0 0 20px hsl(var(--carbon-black))"
+          }} whileTap={{
+            scale: 1.05
+          }} className="btn-cta-primary px-12 py-6 text-xl font-bold rounded-lg w-full md:w-auto relative overflow-hidden" onClick={() => window.open('https://pay.cakto.com.br/3buxx9f_586459', '_blank')}>
+              <motion.div className="absolute inset-0 vhs-scanlines opacity-0" whileHover={{
+              opacity: 0.4
+            }} transition={{
+              duration: 0.3
+            }} />
+              <motion.div className="absolute inset-0 bg-gradient-to-r from-transparent via-aged-paper/10 to-transparent" animate={disableAnimations ? {} : {
+              x: ['-100%', '100%']
+            }} transition={{
+              duration: 3,
+              repeat: disableAnimations ? 0 : Infinity,
+              ease: "linear"
+            }} />
+              <motion.span className="relative z-10" whileHover={{
+              y: -3
+            }} transition={{
+              duration: 0.2
+            }}>
                 🚨 RESOLVER ESSE CASO HOJE 🚨
               </motion.span>
             </motion.button>
